@@ -3,39 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM Practice</title>
+    <title>DOM Manipulation</title>
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="landingstyle.css" />
     <!-- Global Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <!-- Icons -->
     <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.css" />
   </head>
   <body>
-    <div class="container">
+    <nav style="grid-area: navbar">
       <div class="header">
-        <h2>JavaScript Quote Generator</h2>
-      </div>
-
-      <div class="main-content">
-        <div class="text-card">
-          <span class="quote">
-            "I do the very best I know how - the very best I can; and I mean to
-            keep on doing so until the end"
-          </span>
+        <div class="heading">Dom Manipulation projects</div>
+        <div class="main-heading">
+          Five things built <br />
+          with JS
         </div>
-        <div class="person">Abraham Lincoln</div>
-        <div class="button-area">
-          <button id="new-quote">New Quote</button>
-        </div>
+        <p>
+          A collection of interactive browser projects exploring the Document
+          <br />
+          Object Model; no frameworks, just JavaScript, HTML, and CSS.
+        </p>
       </div>
-    </div>
+    </nav>
+    <main style="grid-area: main">
+      <div class="grid-container">
+        <a class="card card-1" href="index1.html" target="_blank">
+          <div class="card-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <span class="card-num">01</span>
+          <h2>Quote generator</h2>
+          <p>
+            A random quote machine that pulls and displays a new inspirational
+            quote on every click.
+          </p>
+          <span class="card-link"
+            >View project <i class="fa-solid fa-arrow-right"></i
+          ></span>
+        </a>
 
-    <script src="project-1.js"></script>
+        <a class="card card-2" href="index2.html" target="_blank">
+          <div class="card-icon">
+            <i class="fa-solid fa-window-restore"></i>
+          </div>
+          <span class="card-num">02</span>
+          <h2>Simple modal</h2>
+          <p>
+            A clean overlay dialog triggerred on click, built with pure DOM
+            manipulation and CSS transitions.
+          </p>
+          <span class="card-link"
+            >View project <i class="fa-solid fa-arrow-right"></i
+          ></span>
+        </a>
+
+        <a class="card" href="index3.html" target="_blank">
+          <div class="card-icon"><i class="fa-solid fa-chevron-down"></i></div>
+          <span class="card-num">03</span>
+          <h2>Dropdown details</h2>
+          <p>
+            An accordion-style FAQ component, expand and collapse with smooth
+            toggling behavior.
+          </p>
+          <span class="card-link"
+            >View project <i class="fa-solid fa-arrow-right"></i
+          ></span>
+        </a>
+
+        <a class="card" href="index4.html" target="_blank">
+          <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
+          <span class="card-num">04</span>
+          <h2>Stopwatch</h2>
+          <p>
+            A precise timer with start, stop and reset, powered by Javascript
+            intervals and real-time display updates.
+          </p>
+          <span class="card-link"
+            >View project <i class="fa-solid fa-arrow-right"></i
+          ></span>
+        </a>
+
+        <a class="card card-5" href="index5.html" target="_blank">
+          <div class="card-icon"><i class="fa-solid fa-list-check"></i></div>
+          <span class="card-num">05</span>
+          <h2>To-do list</h2>
+          <p>
+            A mini task manager; add, complete and remove tasks with live DOM
+            updates.
+          </p>
+          <span class="card-link"
+            >View project <i class="fa-solid fa-arrow-right"></i
+          ></span>
+        </a>
+
+        <a class="card card-6" href="#"></a>
+      </div>
+    </main>
+    <footer style="grid-area: footer">
+      <p>Dev Teeme • &copy; 2026</p>
+      <a
+        href="https://github.com/Teeme86/DOM-Manipulation-Projects"
+        target="_blank"
+        >View on Github <i class="fa-solid fa-arrow-up-right-from-square"></i
+      ></a>
+    </footer>
   </body>
 </html>

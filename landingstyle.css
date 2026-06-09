@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pgbgClr: #0d0d0d;
+  --cardbgClr: #111;
+  --cardhoverClr: #161616;
+  --borderClr: #222;
+  --iconbgClr: #1a1208;
+  --accentClr: #c97a2f;
+  --headingClr: #f0ece4;
+  --cardtitle: #e8e2d9;
+  --cardNum: #444;
+}
+
+body {
+  font-family: "Lato", "sans-serif";
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "navbar"
+    "main"
+    "footer";
+  background: var(--pgbgClr);
+}
+
+.header {
+  margin: 0 0 1rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+}
+
+.heading {
+  color: #7a7672;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8rem;
+}
+
+.main-heading {
+  color: var(--headingClr);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  color: #7a7672;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 75%; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 2rem;
+}
+
+.grid-container .card {
+  padding: 1.5rem;
+  border: 1px solid var(--borderClr);
+  background: var(--cardbgClr);
+}
+
+.grid-container a {
+  text-decoration: none;
+}
+
+.grid-container .card-icon {
+  display: flex;
+  margin-bottom: 8px;
+  color: var(--accentClr);
+  background: var(--iconbgClr);
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.grid-container .card-num {
+  color: var(--cardNum);
+}
+
+.grid-container .card h2 {
+  color: var(--cardtitle);
+  font-size: 1.2rem;
+  margin: 0.8rem 0 0.8rem 0;
+}
+
+.grid-container .card p {
+  color: #5a5650;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.grid-container .card span {
+  color: var(--accentClr);
+}
+
+main .grid-container .card:hover {
+  background: var(--cardhoverClr);
+  transition: 0.3s ease;
+}
+
+.grid-container .card-1 {
+  border-top-left-radius: 1.5rem;
+}
+
+.grid-container .card-2 {
+  border-top-right-radius: 1.5rem;
+}
+
+.grid-container .card-5 {
+  border-bottom-left-radius: 1.5rem;
+}
+
+.grid-container .card-6 {
+  border-bottom-right-radius: 1.5rem;
+  background: var(--cardhoverClr);
+}
+
+footer {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #1c1c1c;
+}
+
+footer p {
+  color: #333;
+  margin-left: 2rem;
+}
+
+footer a {
+  color: var(--accentClr);
+  margin-right: 2rem;
+  text-decoration: none;
+}
