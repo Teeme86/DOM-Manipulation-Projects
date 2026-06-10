@@ -13,7 +13,7 @@ body {
   text-align: center;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4)),
-    url(/img/piqsels.com-id-scjko.jpg) no-repeat center center/ cover;
+    url(../img/piqsels.com-id-scjko.jpg) no-repeat center center/ cover;
 }
 
 .container {
@@ -70,15 +70,19 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+  }
   .container {
-    width: 80%;
-    height: 300px;
+    width: 90%;
+    height: 200px;
   }
   .header {
     font-size: 1rem;
-    width: 60%;
+    width: 80%;
   }
   .main-content {
+    font-size: 1rem;
     font-size: 0.8rem;
     display: flex;
     flex-direction: column;
@@ -90,7 +94,7 @@ body {
     box-shadow: 0 0 10px;
   }
   .main-content .person {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .button-area button {
     font-size: 1.1rem;
@@ -98,15 +102,19 @@ body {
 }
 
 @media (max-width: 480px) {
+  body {
+    align-items: flex-start;
+  }
   .container {
-    width: 80%;
-    height: 300px;
+    width: 90%;
+    height: 200px;
   }
   .header {
     font-size: 1rem;
-    width: 60%;
+    width: 80%;
   }
   .main-content {
+    font-size: 1rem;
     font-size: 0.8rem;
     display: flex;
     flex-direction: column;
@@ -118,7 +126,7 @@ body {
     box-shadow: 0 0 10px;
   }
   .main-content .person {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .button-area button {
     font-size: 1.1rem;
