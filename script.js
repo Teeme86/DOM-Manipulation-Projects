@@ -1,18 +1,16 @@
 const cards = document.querySelectorAll('.card');
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, index) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, index * 100);
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // stop watching once visible
     }
   });
+}, {
+  threshold: 0.1 // card needs to be 10% visible before triggering
 });
 
-cards.forEach(card => observer.observe(card));
-
-// Only run on mobile
 if (window.innerWidth <= 768) {
   cards.forEach(card => observer.observe(card));
 }
