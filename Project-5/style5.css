@@ -9,7 +9,7 @@ body {
   height: 100dvh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.1)),
-    url(img/piqsels.com-id-szvsf.jpg) no-repeat center center/ cover;
+    url(/img/piqsels.com-id-szvsf.jpg) no-repeat center center/ cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,4 +98,66 @@ input {
 .task .deleteTask:hover {
   background: red;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+    padding: 2rem 1rem;
+  }
+
+  #add-task-container {
+    width: 100%;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  #add-task {
+    font-size: 1rem;
+  }
+
+  .task li {
+    font-size: 1.1rem;
+  }
+
+  .task .checkTask {
+    font-size: 1.2rem;
+  }
+
+  .task .deleteTask {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start;
+    padding: 2rem 1rem;
+  }
+
+  #add-task-container {
+    width: 100%;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  #add-task {
+    font-size: 1rem;
+  }
+
+  .task li {
+    font-size: 1.1rem;
+  }
+
+  .task .checkTask {
+    font-size: 1.2rem;
+  }
+
+  .task .deleteTask {
+    font-size: 1.1rem;
+  }
 }

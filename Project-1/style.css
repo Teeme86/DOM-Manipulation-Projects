@@ -13,7 +13,7 @@ body {
   text-align: center;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4)),
-    url(img/piqsels.com-id-scjko.jpg) no-repeat center center/ cover;
+    url(/img/piqsels.com-id-scjko.jpg) no-repeat center center/ cover;
 }
 
 .container {
@@ -67,4 +67,60 @@ body {
 
 .button-area button:active {
   background: lightblue;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    height: 300px;
+  }
+  .header {
+    font-size: 1rem;
+    width: 60%;
+  }
+  .main-content {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 0 10px;
+  }
+  .main-content .person {
+    font-size: 1rem;
+  }
+  .button-area button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 80%;
+    height: 300px;
+  }
+  .header {
+    font-size: 1rem;
+    width: 60%;
+  }
+  .main-content {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 0 10px;
+  }
+  .main-content .person {
+    font-size: 1rem;
+  }
+  .button-area button {
+    font-size: 1.1rem;
+  }
 }
